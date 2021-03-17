@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_vpn_key_24"
+        android:title="Home"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/nav_cakes"
+        android:enabled="true"
+        android:icon="@drawable/ic_online_shopping"
+        android:title="Flavours"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/nav_occasional"
+        android:enabled="true"
+        android:icon="@drawable/ic_hide"
+        android:title="Occasional"
+        app:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/nav_offers"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_dashboard_24"
+        android:title="Offers"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="Settings"
+        app:showAsAction="ifRoom|withText" />
+
+</menu>
