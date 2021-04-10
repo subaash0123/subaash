@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.merchandiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true">
+        <activity android:name=".SearchProductsActivity"></activity>
+        <activity android:name=".AdminUserProductsActivity" />
+        <activity android:name=".AdminNewOrdersActivity" />
+        <activity android:name=".ConfirmFinalOrderActivity" />
+        <activity
+            android:name="Buyers.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="Sellers.SellerHomeActivity"
+            android:label="@string/title_activity_seller_home" />
+        <activity
+            android:name="Sellers.SellerLoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="Sellers.SellerRegistrationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="Buyers.CartActivity" />
+        <activity android:name=".SettingActivitytwo" />
+
+        <uses-library
+            android:name="com.google.android.wearable"
+            android:required="false" />
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="false" />
+
+        <activity
+            android:name="Buyers.ProductDetailsActivity"
+            android:label="@string/title_activity_product_details2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".otp" />
+        <activity android:name=".Demo" />
+        <activity android:name=".AdminNewProduct" />
+        <activity android:name=".Manifest" />
+        <activity
+            android:name=".AdminCategoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="Buyers.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="Buyers.RegisterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="Buyers.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".OtpVerifyScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    tools:context="Buyers.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottie"
+            app:lottie_autoPlay="true"
+            android:layout_width="wrap_content"
+            android:elevation="2dp"
+            android:layout_height="150dp"
+            app:lottie_loop="true"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+
+
+            app:lottie_rawRes="@raw/circlejson"
+        >
+
+        </com.airbnb.lottie.LottieAnimationView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:padding="5dp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/welcome"
+        android:textStyle="bold"
+        android:text="Login"
+        android:textColor="#A54DED"
+        android:textSize="28dp" />
+
+
+    <LinearLayout
+        android:id="@+id/Below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/login_phone_number_input"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edittext_border"
+            android:ems="10"
+
+            android:hint="ENTER EMAIL / MOBILE"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp">
+
+            <EditText
+                android:id="@+id/login_password_input"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/edittext_border"
+                android:ems="10"
+
+                android:hint="PASSWORD"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/show_pass_btn"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:alpha=".5"
+
+                android:padding="5dp"
+                android:src="@drawable/ic_hide"
+                app:tint="@android:color/tertiary_text_dark" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/not_admin_panel_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="I'm not a Seller?"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+
+
+            />
+
+
+        <TextView
+            android:id="@+id/admin_panel_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="30dp"
+            android:text="Are You a Seller ?"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:drawable="@drawable/second_button"
+            android:text="Login"
+            android:backgroundTint="#FF1919"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
